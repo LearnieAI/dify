@@ -357,6 +357,7 @@ services:
       - ./nginx/proxy.conf:/etc/nginx/proxy.conf
       - ./nginx/conf.d:/etc/nginx/conf.d
       - ./nginx/ssl:/etc/ssl
+      - /etc/letsencrypt:/etc/letsencrypt
     depends_on:
       - api
       - web
